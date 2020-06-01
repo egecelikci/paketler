@@ -1,0 +1,17 @@
+name       : maxcso
+version    : 1.12.0
+release    : 1
+source     :
+    - https://github.com/unknownbrackets/maxcso/archive/v1.12.0.tar.gz : e55b3ff8da6337f23da0fd2c51ee31571aba536b18b0039b9353b61b6fec7cb3
+license    : ISC
+component  : system.utils
+summary    : ISO to CSO compression program.
+description: |
+    maxcso is a fast ISO to CSO compression (& CSO to ISO decompression) program for use with PSP and PS2 emulators, which uses multiple algorithms for best compression ratio.
+builddeps  :
+    - pkgconfig(liblz4)
+    - pkgconfig(libuv)
+build      : |
+    %make
+install    : |
+    %make_install
