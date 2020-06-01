@@ -1,6 +1,6 @@
 name       : komikku
 version    : 0.17.0
-release    : 2
+release    : 3
 source     :
     - https://gitlab.com/valos/Komikku/-/archive/v0.17.0/Komikku-v0.17.0.tar.gz : 4deb5a90ed80c1ee98266f4f3bdff4d2ffb6610b42975ce96209b3c2be14a734
 license    : GPL-3.0-or-later
@@ -11,9 +11,10 @@ description: |
 builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(python)
+    - pkgconfig(libhandy-1)
     - git
-    - libhandy-devel
 rundeps    :
+    - libhandy
     - python-beautifulsoup4
     - python-cloudscraper
     - python-dateparser
