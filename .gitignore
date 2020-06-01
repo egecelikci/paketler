@@ -1,0 +1,7 @@
+paketlerepository 
+common
+Makefile
+Makefile.common
+Makefile.iso
+*.eopkg
+*.log
