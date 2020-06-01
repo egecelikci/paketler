@@ -1,0 +1,30 @@
+name       : komikku
+version    : 0.17.0
+release    : 1
+source     :
+    - https://gitlab.com/valos/Komikku/-/archive/v0.17.0/Komikku-v0.17.0.tar.gz : 4deb5a90ed80c1ee98266f4f3bdff4d2ffb6610b42975ce96209b3c2be14a734
+license    : GPL-3.0-or-later
+component  : office.viewers
+summary    : An online/offline manga reader for GNOME
+description: |
+    An online/offline manga reader for GNOME, developed with the aim of being used with the Librem 5 phone.
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libhandy-1)
+    - pkgconfig(python)
+    - git
+rundeps    :
+    - python-beautifulsoup4
+    - python-cloudscraper
+    - python-dateparser
+    - python-file-magic
+    - python-lxml
+    - python-pillow
+    - python-pure-protobuf
+    - python-unidecode
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install

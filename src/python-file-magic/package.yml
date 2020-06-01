@@ -1,0 +1,14 @@
+name       : python-file-magic
+version    : 0.4.0
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/bc/e5/818e16cc2100898a5ab313e6a468a04390e6157fed539c98deab40015454/file-magic-0.4.0.tar.gz : 4dd1492b9a9ca57c272aaa9cc495cd65310115b2aec5503c7d047ad9bfae1035
+license    : BSD
+component  : programming.python
+summary    : libmagic Python bindings
+description: |
+    This library is a Python ctypes interface to libmagic.
+build      : |
+    %python3_setup
+install    : |
+    %python3_install

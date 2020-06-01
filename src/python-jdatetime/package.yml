@@ -1,0 +1,14 @@
+name       : python-jdatetime
+version    : 3.6.2
+release    : 1
+source     :
+    - https://github.com/slashmili/python-jalali/archive/v3.6.2.tar.gz : fe446810a171f5f6840f395ad623832ab7ab408b998703e262dff99752b7f969
+license    : Python-2.0
+component  : programming.python
+summary    : Jalali calendar binding for Python based on Python's datetime module
+description: |
+    jdatetime is Jalali implementation of Python's datetime module
+build      : |
+    %python3_setup
+install    : |
+    %python3_install

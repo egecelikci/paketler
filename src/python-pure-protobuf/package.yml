@@ -1,0 +1,14 @@
+name       : python-pure-protobuf
+version    : 2.0.0
+release    : 1
+source     :
+    - https://github.com/eigenein/protobuf/archive/2.0.0.tar.gz : e1303e8ae29ce5e33254d49f93d896d04b040070f89e87232e33ecdfbb4ea6d9
+license    : MIT
+component  : programming.python
+summary    : Python implementation of Protocol Buffers data types.
+description: |
+    Python implementation of Protocol Buffers data types with dataclasses support
+build      : |
+    %python3_setup
+install    : |
+    %python3_install

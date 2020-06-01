@@ -1,7 +1,10 @@
-paketlerepository 
+paketlerepository
+abi_symbols
+abi_used_libs
 common
 Makefile
 Makefile.common
 Makefile.iso
 *.eopkg
 *.log
+pspec_x86_64.xml

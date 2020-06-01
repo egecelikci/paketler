@@ -1,0 +1,18 @@
+name       : python-cloudscraper
+version    : 1.2.40
+release    : 1
+source     :
+    - https://github.com/VeNoMouS/cloudscraper/archive/1.2.40.tar.gz : b31fe44a10402103e87e21519d26d4c5b34d7b06c02dab31eb082665b7ad6f8d
+license    : MIT
+component  : programming.python
+summary    : A Python module to bypass Cloudflare's anti-bot page.
+description: |
+    A simple Python module to bypass Cloudflare's anti-bot page (also known as "I'm Under Attack Mode", or IUAM), implemented with Requests.
+builddeps  :
+    - python-requests
+rundeps    :
+    - python-requests-toolbelt
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
