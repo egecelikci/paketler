@@ -11,7 +11,3 @@ _These packages are not official, so not reviewed or supported by the Solus team
 Please open a issue from [here](https://github.com/egecelikci/paketler).
 
 > Please do not post this repository on official Solus channels (development portal, forums, irc, subreddit...etc).
-
-- Credit stuff:
-  - [streambinder/theca](https://github.com/streambinder/theca)
-  - [streambinder/solbump](https://github.com/streambinder/solbump)
